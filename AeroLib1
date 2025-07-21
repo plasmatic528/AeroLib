@@ -5,7 +5,6 @@ local stats = get('Stats')
 local function getPing()
 	return stats.PerformanceStats.Ping:GetValue()
 end
-print('Lib done!!!')
 
 
 -- UI
@@ -2559,7 +2558,7 @@ UIElements.UICorner_71.CornerRadius = UDim.new(0, 6)
 UIElements.UICorner_71.Parent = UIElements.Title_4
 
 UIElements.Main.BorderSizePixel = 0
-UIElements.Main.BackgroundColor3 = Color3.fromRGB(15, 15, 22)
+UIElements.Main.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
 UIElements.Main.AnchorPoint = Vector2.new(0.5, 0.5)
 UIElements.Main.Size = UDim2.new(0.500, 0, 592.5, 0)
 UIElements.Main.Name = "Main"
@@ -3912,5 +3911,6 @@ end
 
 wait(.1)
 game:GetService('TweenService'):Create(UIElements.Main, TweenInfo.new(0.5), {GroupTransparency = 0}):Play()
+print('UI Loading Done')
 
 return UI
